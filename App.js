@@ -1,24 +1,9 @@
 import React from 'react';
 import {StyleSheet} from 'react-native';
-import {DragScreen} from './screens/DragScreen';
-import {GestureHandlerRootView} from 'react-native-gesture-handler';
+import {NavigationContainerComponent} from './navigation';
 
 const App = () => {
-  return (
-    <GestureHandlerRootView style={styles.screen}>
-      <DragScreen />
-    </GestureHandlerRootView>
-  );
+  return <NavigationContainerComponent />;
 };
 
-const styles = StyleSheet.create({
-  screen: {
-    flex: 1,
-
-    alignItems: 'center',
-    justifyContent: 'center',
-    padding: 32,
-    backgroundColor: '#ececec',
-  },
-});
 export default App;
