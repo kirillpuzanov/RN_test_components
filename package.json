@@ -8,6 +8,7 @@
     "pod": "cd ios && pod install"
   },
   "dependencies": {
+    "@react-native-community/blur": "^3.6.0",
     "@react-native-masked-view/masked-view": "^0.2.6",
     "@react-navigation/drawer": "^6.1.8",
     "@react-navigation/native": "^6.0.6",
