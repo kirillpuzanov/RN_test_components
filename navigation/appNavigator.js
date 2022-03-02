@@ -4,6 +4,7 @@ import {HomeScreen} from '../screens/HomeScreens';
 import {DragScreen} from '../screens/DragScreen';
 import {DatePickerScreen} from '../screens/DatePicker';
 import {BlurScreen} from '../screens/Blur';
+import {SliderInputRange} from '../screens/Slider_InputRange';
 
 const Drawer = createDrawerNavigator();
 
@@ -14,6 +15,7 @@ export function AppNavigator() {
       <Drawer.Screen name="DragList" component={DragScreen} />
       <Drawer.Screen name="DataPecker" component={DatePickerScreen} />
       <Drawer.Screen name="BlurScreen" component={BlurScreen} />
+      <Drawer.Screen name="SliderInputRange" component={SliderInputRange} />
     </Drawer.Navigator>
   );
 }
