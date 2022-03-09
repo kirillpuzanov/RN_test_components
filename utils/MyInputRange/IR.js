@@ -6,7 +6,6 @@ import {
   Platform,
   StyleSheet,
   PanResponder,
-  LayoutChangeEvent,
   Text,
 } from 'react-native';
 import {Rect} from './Rect';
@@ -118,7 +117,7 @@ export const InputRange = ({
   const [containerSize, setContainerSize] = useState({width: 0, height: 0});
 
   const handleMeasure = useCallback(
-    (name, event: LayoutChangeEvent) => {
+    (name, event) => {
       const varInfo = {
         thumbSize: {size: thumbSize, setSize: setThumbSize},
         trackSize: {size: trackSize, setSize: setTrackSize},
