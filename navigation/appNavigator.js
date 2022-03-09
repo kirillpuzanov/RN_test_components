@@ -5,6 +5,7 @@ import {DragScreen} from '../screens/DragScreen';
 import {DatePickerScreen} from '../screens/DatePicker';
 import {BlurScreen} from '../screens/Blur';
 import {SliderInputRange} from '../screens/Slider_InputRange';
+import { UploadFileScreen } from "../screens/UploadFileScreen";
 
 const Drawer = createDrawerNavigator();
 
@@ -16,6 +17,7 @@ export function AppNavigator() {
       <Drawer.Screen name="DataPecker" component={DatePickerScreen} />
       <Drawer.Screen name="BlurScreen" component={BlurScreen} />
       <Drawer.Screen name="SliderInputRange" component={SliderInputRange} />
+      <Drawer.Screen name="UploadFileImg" component={UploadFileScreen} />
     </Drawer.Navigator>
   );
 }

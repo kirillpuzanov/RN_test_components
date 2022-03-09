@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import {StyleSheet, Text, View} from 'react-native';
 import {useSafeAreaInsets} from 'react-native-safe-area-context';
-import {DEVICE_WIDTH, isIphone} from '../constatnt/values';
+import {DEVICE_HEIGHT, DEVICE_WIDTH, isIphone} from '../constatnt/values';
 import {ScrollView} from 'react-native-gesture-handler';
 import {InputRange} from '../utils/MyInputRange';
 
@@ -25,7 +25,10 @@ export const SliderInputRange = () => {
       <ScrollView
         style={{flex: 1, paddingTop: 50}}
         showsVerticalScrollIndicator={false}
-        contentContainerStyle={[styles.screen, {width: DEVICE_WIDTH}]}>
+        contentContainerStyle={[
+          styles.screen,
+          {width: DEVICE_WIDTH, minHeight: DEVICE_HEIGHT * 2},
+        ]}>
         <View style={styles.titleWrapper}>
           <Text style={{fontSize: 20}}>Curr Value</Text>
           <Text style={{fontSize: 18}}>{val}</Text>
@@ -36,11 +39,11 @@ export const SliderInputRange = () => {
             value={val}
             minimumValue={0}
             maximumValue={100}
-            step={10}
+            // step={10}
             showLabel
             showMinMax
-            allowTouchTrack
-            // allowTouchTrack={isIphone}
+            // allowTouchTrack
+            allowTouchTrack={isIphone}
             onValueChange={v => setVal(Math.round(v))}
           />
         </View>
