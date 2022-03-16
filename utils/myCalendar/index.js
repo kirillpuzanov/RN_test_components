@@ -1,2 +1,3 @@
-import {MyCalendar} from './Calendar';
-export {MyCalendar};
+import { MyCalendar } from './myCalendar';
+
+export { MyCalendar };

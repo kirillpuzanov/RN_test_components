@@ -6,7 +6,7 @@ import {DatePickerScreen} from '../screens/DatePicker';
 import {BlurScreen} from '../screens/Blur';
 import {SliderInputRange} from '../screens/Slider_InputRange';
 import {UploadFileScreen} from '../screens/UploadFileScreen';
-import {CalendarScreen} from '../screens/Calendar';
+import {CalendarScreen} from '../screens/CalendarScreen';
 
 const Drawer = createDrawerNavigator();
 

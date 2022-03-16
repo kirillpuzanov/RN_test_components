@@ -1,6 +1,6 @@
 module.exports = {
-  root: true,
-  // extends: '@react-native-community',
+  extends: ['airbnb'],
+  parser: '@babel/eslint-parser',
   rules: {
     'no-use-before-define': 'off',
     'react/jsx-filename-extension': 'off',
@@ -20,9 +20,10 @@ module.exports = {
     'no-nested-ternary': 'off',
     'no-param-reassign': 'off',
     'react/function-component-definition': 'off',
-    camelcase: 'off',
+    'camelcase': 'off',
     'react/jsx-no-useless-fragment': 'off',
     'object-property-newline': 'off',
     'react/no-array-index-key': 'off',
+    'no-unsafe-optional-chaining': 'off',
   },
 };
